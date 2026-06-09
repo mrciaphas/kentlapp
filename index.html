@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+    <header>
+    <a href="#" class="header-left">
+        <h2 class="username">Juan carlos santos</h2>
+    </a>
+    <nav class="header-right">
+        <a href="#inicio" data-i18n="navInicio">Inicio</a>
+        <a href="#proyecto" data-i18n="navProyectos">Proyectos</a>
+        <a href="#sobre-mi" data-i18n="navSobreMi">Sobre mí</a>
+        <a href="#Certificaciones" data-i18n="navCertificaciones">Certificaciones</a>
+        <a id="lang-toggle" class="boton" type="button" data-i18n="btnLang">English</a>
+    </nav>
+    </header>
+
+    <section class="inicio" id="inicio">
+        <div class="job">
+            <span id="job-title" data-i18n="jobTitle">Software developer</span>
+        </div>
+        <p class="nombre">Juan Carlos Santos</p>   
+        <p class="slogan" data-i18n="slogan">Cada proyecto comienza con una idea, mi trabajo es convertirla en realidad.</p>
+
+
+        <div class="contactos">
+            <a class="boton" href="#proyecto" class="btn" data-i18n="btnVerProyectos">Ver proyectos</a>
+            <a class="boton" href="https://github.com/mrciaphas" class="btn" data-i18n="btnContactame">Contáctame</a>
+            <a class="boton" href="media/Currículum.pdf" class="btn" data-i18n="btnDescargarCV">Descargar CV</a>
+        </div>
+
+        <ul class="tecnologias">
+            <li><img src="media/css.png" alt="Profile Picture" class="profile-pic"></li>
+            <li><img src="media/html.png" alt="Profile Picture" class="profile-pic"></li>
+            <li><img src="media/js.png" alt="Profile Picture" class="profile-pic"></li>
+            <li><img src="media/python.webp" alt="Profile Picture" class="profile-pic"></li>
+            <li><img src="media/mysql.png" alt="Profile Picture" class="profile-pic"></li>
+            <li><img src="media/git.png" alt="Profile Picture" class="profile-pic"></li>
+            <li><img src="media/cs.png" alt="Profile Picture" class="profile-pic"></li>
+            <li><img src="media/ubuntu.png" alt="Profile Picture" class="profile-pic"></li>
+        </ul>           
+    </section>
+    
+    <div class="container" id="proyecto">
+        <div class="box"> 
+            <div class="text-content">
+                <p class="proyecto" data-i18n="titleTorneo">Torneo Mexicano de Robotica</p>
+                <p class="about" data-i18n="torneoIntro">En esta competencia fui parte del equipo de la UTCJ en el Torneo Mexicano de robótica, en la categoría de drones autónomos.</p>
+                <p class="about" data-i18n="torneoDetalle1">En este torneo competimos contra equipos de universidades de gran nivel, entre los que destacan la UNAM, el Tec de Monterrey y el Instituto Aeronáutico de Querétaro.</p>
+                <p class="about" data-i18n="torneoDetalle2">Después de 2 días de competencia en la UTBIS de Puebla, logramos un primer lugar contra equipos de mucha mayor categoría y nombre.</p>
+                <p class="about" data-i18n="torneoDetalle3">En este proyecto me encargué de diseñar sistemas de visión y movimientos autónomos para un dron DJI Tello, usando los sistemas de Tello y librerías de Python como NumPy y cv2.</p>
+            </div>
+            <img src="media/trofeo.png" alt="Profile Picture" class="profile-pic">
+        </div>
+        <div class="box"> 
+            <div class="text-content">
+                <p class="proyecto" data-i18n="titleCreateCrew">Create Crew</p>
+                <p class="about" data-i18n="createCrewIntro">Create Crew es un proyecto que pretendía conectar personas y crear equipos de trabajo para que pudieran, juntos, desarrollar proyectos que no podrían por sí mismos.</p>
+                <p class="about" data-i18n="createCrewDetalle1">Aunque no se concretó ni hay planes de hacerlo en un futuro, funcionó como mi mayor proyecto y ejercicio, ya que el prototipo final era totalmente funcional, contando con una base de datos en Firebase y un diseño que permitía buscar perfiles compatibles con las necesidades de tu proyecto.</p>
+                <p class="about" data-i18n="createCrewDetalle2">Sería el lugar en el que podrías encontrar un primer proyecto en calidad de colaborador en caso de que nunca hubieras llevado a cabo un proyecto grande.</p>
+            </div>
+            <img src="media/cc.PNG" alt="Profile Picture" class="profile-pic">
+        </div>
+        <div class="box"> 
+            <div class="text-content">
+                <p class="proyecto" data-i18n="titleARMural">AR Mural</p>
+                <p class="about" data-i18n="armuralIntro">Proyecto de desarrollo móvil creado con Magnet Ionic; es un programa que funciona para poder crear dibujos usando la cámara de un teléfono, y compartir la imagen con otro dispositivo en tiempo real para llevar a cabo murales.</p>
+                <p class="about" data-i18n="armuralDetalle1">El desarrollo de este proyecto se llevó a cabo con el combo clásico de desarrollo web, HTML, CSS, JS, compilado en Android Studio con npm para generar una aplicación de Android nativa.</p>
+                <p class="about" data-i18n="armuralDetalle2">Esta aplicación está actualmente en las fases finales de desarrollo y pronto se podrá descargar en Google Play.</p>
+            </div>
+            <img src="media/AR Mural.png" alt="Profile Picture" class="profile-pic">
+        </div>
+        <div class="box"> 
+            <div class="text-content">
+                <p class="proyecto" data-i18n="titleDronescript">Dronescript</p>
+                <p class="about" data-i18n="dronescriptIntro">De lejos la aplicación más compleja que he desarrollado; es una aplicación de programación por bloques que traduce los comandos programados en la pizarra a código en Python que controla drones del tipo DJI Tello.</p>
+                <p class="about" data-i18n="dronescriptDetalle1">Actualmente está en desarrollo, se usa el combo clásico de desarrollo web para la interfaz, el código enviado al dron es Python por medio de una API de Flask.</p>
+                <p class="about" data-i18n="dronescriptDetalle2">El objetivo de esta aplicación es liberar su código por completo, para que pueda, a través de plugins de diseño propio o de la comunidad, comunicarse con otros drones de código abierto como los Parrot Anafi u otros.</p>
+            </div>
+            <img src="media/dron.PNG" alt="Profile Picture" class="profile-pic">
+        </div>
+    </div>
+
+    <div class="container" id="sobre-mi">
+        <h2 class="Titulos" data-i18n="sobreMiTitulo">Sobre mí</h2>
+        
+        <div class="about1">
+            <div class="text-content">
+            <p data-i18n="sobreMiParrafo1">Soy desarrollador de software independiente con experiencia en aplicaciones móviles, automatización y visión por computadora. Trabajo en proyectos propios y acepto colaboraciones.</p>
+            <p data-i18n="sobreMiParrafo2">Mis aplicaciones están disponibles en forma independiente y pueden recibir <strong>donaciones voluntarias</strong> de quienes las encuentren útiles — una forma de apoyar el desarrollo continuo de herramientas gratuitas.</p>
+            <p data-i18n="sobreMiParrafo3">Actualmente disponible para proyectos freelance y consultoría técnica bajo el nombre de "kentlapp".</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="Certificaciones">
+        <h2 class="Titulos">Certificaciones</h2>
+        <div class="about1">
+            <P data-i18n="Certificaciones1">C Essentials 1</P>
+            <P data-i18n="Certificaciones2">IT Essentials: PC Hardware and Software</P>
+            <P data-i18n="Certificaciones3">CCNAv7: Switching, Routing, and Wireless Essentials</P>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="atibuciones">
+            
+            <a href="https://www.flaticon.es/iconos-gratis/mysql" title="mysql iconos">Mysql icono creado por Those Icons - Flaticon</a>
+            <a href="https://www.flaticon.es/iconos-gratis/ubuntu" title="ubuntu iconos">Ubuntu iconos creados por Pixel perfect - Flaticon</a>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            es: {
+                navInicio: 'Inicio',
+                navProyectos: 'Proyectos',
+                navSobreMi: 'Sobre mi',
+                navCertificaciones: 'Certificaciones',
+                btnLang: 'English',
+                jobTitle: 'Software developer',
+                slogan: 'Cada proyecto comienza con una idea, mi trabajo es convertirla en realidad.',
+                btnVerProyectos: 'Ver proyectos',
+                btnContactame: 'Github',
+                btnDescargarCV: 'Descargar CV',
+                titleTorneo: 'Torneo Mexicano de Robotica',
+                torneoIntro: 'En esta competencia fui parte del equipo de la UTCJ en el Torneo Mexicano de robótica, en la categoría de drones autónomos.',
+                torneoDetalle1: 'En este torneo competimos contra equipos de universidades de gran nivel, entre los que destacan la UNAM, el Tec de Monterrey y el Instituto Aeronáutico de Querétaro.',
+                torneoDetalle2: 'Después de 2 días de competencia en la UTBIS de Puebla, logramos un primer lugar contra equipos de mucha mayor categoría y nombre.',
+                torneoDetalle3: 'En este proyecto me encargué de diseñar sistemas de visión y movimientos autónomos para un dron DJI Tello, usando los sistemas de Tello y librerías de Python como NumPy y cv2.',
+                titleCreateCrew: 'Create Crew',
+                createCrewIntro: 'Create Crew es un proyecto que pretendía conectar personas y crear equipos de trabajo para que pudieran, juntos, desarrollar proyectos que no podrían por sí mismos.',
+                createCrewDetalle1: 'Aunque no se concretó ni hay planes de hacerlo en un futuro, funcionó como mi mayor proyecto y ejercicio, ya que el prototipo final era totalmente funcional, contando con una base de datos en Firebase y un diseño que permitía buscar perfiles compatibles con las necesidades de tu proyecto.',
+                createCrewDetalle2: 'Sería el lugar en el que podrías encontrar un primer proyecto en calidad de colaborador en caso de que nunca hubieras llevado a cabo un proyecto grande.',
+                titleARMural: 'AR Mural',
+                armuralIntro: 'Proyecto de desarrollo móvil creado con Magnet Ionic; es un programa que funciona para poder crear dibujos usando la cámara de un teléfono, y compartir la imagen con otro dispositivo en tiempo real para llevar a cabo murales.',
+                armuralDetalle1: 'El desarrollo de este proyecto se llevó a cabo con el combo clásico de desarrollo web, HTML, CSS, JS, compilado en Android Studio con npm para generar una aplicación de Android nativa.',
+                armuralDetalle2: 'Esta aplicación está actualmente en las fases finales de desarrollo y pronto se podrá descargar en Google Play.',
+                titleDronescript: 'Dronescript',
+                dronescriptIntro: 'De lejos la aplicación más compleja que he desarrollado; es una aplicación de programación por bloques que traduce los comandos programados en la pizarra a código en Python que controla drones del tipo DJI Tello.',
+                dronescriptDetalle1: 'Actualmente está en desarrollo, se usa el combo clásico de desarrollo web para la interfaz, el código enviado al dron es Python por medio de una API de Flask.',
+                dronescriptDetalle2: 'El objetivo de esta aplicación es liberar su código por completo, para que pueda, a través de plugins de diseño propio o de la comunidad, comunicarse con otros drones de código abierto como los Parrot Anafi u otros.',
+                sobreMiTitulo: 'Sobre mí',
+                sobreMiParrafo1: 'Soy desarrollador de software independiente con experiencia en aplicaciones móviles, automatización y visión por computadora. Trabajo en proyectos propios y acepto colaboraciones.',
+                sobreMiParrafo2: 'Mis aplicaciones están disponibles en forma independiente y pueden recibir <strong>donaciones voluntarias</strong> de quienes las encuentren útiles — una forma de apoyar el desarrollo continuo de herramientas gratuitas.',
+                sobreMiParrafo3: 'Actualmente disponible para proyectos freelance y consultoría técnica bajo el nombre de "kentlapp".'
+            },
+            en: {
+                navInicio: 'Home',
+                navProyectos: 'Projects',
+                navSobreMi: 'About',
+                navCertificaciones: 'Certifications',
+                btnLang: 'Español',
+                jobTitle: 'Software developer',
+                slogan: 'Every project starts with an idea, my job is to turn it into reality.',
+                btnVerProyectos: 'See projects',
+                btnContactame: 'Github',
+                btnDescargarCV: 'Download CV',
+                titleTorneo: 'Mexican Robotics Tournament',
+                torneoIntro: 'In this competition I was part of the UTCJ team at the Mexican Robotics Tournament in the autonomous drones category.',
+                torneoDetalle1: 'In this tournament we competed against teams from top universities, including UNAM, Tec de Monterrey, and the Aeronautical Institute of Querétaro.',
+                torneoDetalle2: 'After 2 days of competition at UTBIS in Puebla, we achieved first place against teams with much more experience and recognition.',
+                torneoDetalle3: 'In this project I was responsible for designing vision and autonomous movement systems for a DJI Tello drone, using Tello systems and Python libraries like NumPy and cv2.',
+                titleCreateCrew: 'Create Crew',
+                createCrewIntro: 'Create Crew is a project that aimed to connect people and form teams so they could together develop projects they could not do alone.',
+                createCrewDetalle1: 'Although it was not completed and there are no plans to do so in the future, it served as my largest project and exercise, as the final prototype was fully functional, with a Firebase database and a design that allowed finding compatible profiles for your project needs.',
+                createCrewDetalle2: 'It would be the place where you could find a first project as a collaborator in case you had never undertaken a large project before.',
+                titleARMural: 'AR Mural',
+                armuralIntro: 'Mobile development project created with Magnet Ionic; it is an app that lets you draw using a phone camera and share the image with another device in real time to create murals.',
+                armuralDetalle1: 'The development of this project was carried out with the classic web development stack, HTML, CSS, JS, compiled in Android Studio with npm to generate a native Android app.',
+                armuralDetalle2: 'This app is currently in the final development stages and will soon be available to download on Google Play.',
+                titleDronescript: 'Dronescript',
+                dronescriptIntro: 'By far the most complex app I have developed; it is a block-based programming app that translates the commands programmed on the board into Python code that controls DJI Tello drones.',
+                dronescriptDetalle1: 'It is currently under development; the classic web development stack is used for the interface, and the code sent to the drone is Python through a Flask API.',
+                dronescriptDetalle2: 'The goal of this app is to release its code completely, so that through custom or community plugins it can communicate with other open source drones like the Parrot Anafi or others.',
+                sobreMiTitulo: 'About me',
+                sobreMiParrafo1: 'I am an independent software developer with experience in mobile apps, automation, and computer vision. I work on my own projects and accept collaborations.',
+                sobreMiParrafo2: 'My apps are available independently and can receive <strong>voluntary donations</strong> from those who find them useful — a way to support the ongoing development of free tools.',
+                sobreMiParrafo3: 'Currently available for freelance projects and technical consulting under the name "kentlapp".'
+            }
+        };
+
+        const elements = document.querySelectorAll('[data-i18n]');
+        const langToggle = document.getElementById('lang-toggle');
+
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+            elements.forEach(el => {
+                const key = el.dataset.i18n;
+                const translation = translations[lang] && translations[lang][key];
+                if (translation !== undefined) {
+                    el.innerHTML = translation;
+                }
+            });
+        }
+
+        langToggle.addEventListener('click', () => {
+            const nextLang = document.documentElement.lang === 'es' ? 'en' : 'es';
+            setLanguage(nextLang);
+        });
+
+        setLanguage('es');
+    </script>
+
+</body>
+</html>
